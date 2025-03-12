@@ -4,7 +4,7 @@ document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 // Corrected button href attributes.
-const portfolioButton = document.querySelectorAll('button')[1];
+/*const portfolioButton = document.querySelectorAll('button')[1];
 const linkedinButton = document.querySelectorAll('button')[2];
 const githubButton = document.querySelectorAll('button')[3];
 const contactButton = document.querySelectorAll('button')[4];
@@ -23,4 +23,4 @@ githubButton.addEventListener('click', () => {
 
 contactButton.addEventListener('click', () => {
   window.location.href = 'mailto:alya.mcvay@gmail.com';
-});
+});*/

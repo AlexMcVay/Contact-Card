@@ -41,6 +41,7 @@ button {
   font-size: 16px;
   transition: background-color 0.3s ease;
   width: 90%;
+  align:center;
 }
 
 button:hover {
@@ -52,6 +53,11 @@ footer {
   width: 100%;
   text-align: center;
   padding: 20px 0;
+}
+
+a{
+  width: 100%;
+  align-content: center;
 }
 
 .copyright {
