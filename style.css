@@ -1,58 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 :root {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
-    --primary-color: #333;
-    --accent-color: #f7f7f7;
+  --primary-bg: #F0F4F8;
+  --primary-text: #4A4A4A;
+  --header-color: #3A5A9E;
+  --button-bg: #66BB6A;
+  --button-hover: #55AA59;
+  --button-highlight: #4FC3F7;
 }
 
-header {
-    background-color: var(:--primary-color);
-    padding: 1em;
-    text-align: center;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
+#title {
+  margin: 50px 0;
 }
 
-section {
-    padding: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    margin-top: 0;
-    align:center;
+#title h1 {
+  color: var(--header-color);
+  font-size: 28px;
 }
 
 button {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border: none;
-    padding: 1em 2em;
-    font-size: 1em;
-    cursor: pointer;
-    width: 100%;
-    padding: auto;
+  background-color: var(--button-bg);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 90%;
 }
 
 button:hover {
-    background-color: var(--primary-color);
-    color: calc(var(--primary-color)-#fff);
+  background-color: var(--button-hover);
 }
 
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1em;
-    text-align: center;
-    clear: both;
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
 }
 
+.copyright {
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  button {
+    width: 90%; /* Make buttons full width on smaller screens */
+    margin: 5px 0;
+  }
+}
