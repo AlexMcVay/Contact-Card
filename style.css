@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-  --primary-bg: #F0F4F8;
-  --primary-text: #4A4A4A;
-  --header-color: #3A5A9E;
-  --button-bg: #66BB6A;
-  --button-hover: #55AA59;
-  --button-highlight: #4FC3F7;
+  --primary-bg: #F5F5F5;
+  --primary-text: #333333;
+  --header-color: #2C699A;
+  --button-bg: #408EC6;
+  --button-hover: #3070A0;
+  --button-highlight: #90CAF9;
 }
 
 body {
@@ -37,11 +37,12 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px auto; /* Center buttons horizontally */
   font-size: 16px;
   transition: background-color 0.3s ease;
   width: 90%;
-  align:center;
+  display: block; /* Ensure buttons behave like block elements */
+  text-align: center; /* Center text inside the button */
 }
 
 button:hover {
